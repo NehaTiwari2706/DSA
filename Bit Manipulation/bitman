@@ -1,0 +1,35 @@
+//BITWISE OPERATOR
+#include<iostream>
+using namespace std;
+
+int main(){
+    
+    // a = 5(00000101), b = 9(00001001)
+    int a=5,b=9;
+
+    // & operator
+    // The result is 00000001
+    cout<<"(a&b) :"<<(a & b )<<endl;
+    
+    // | operator
+    // The result is 00001101
+    cout<<"(a|b) :"<<(a | b)<<endl;
+ 
+    // ^ operator
+    // The result is 
+    cout<<"(a^b) :"<<(a ^ b)<<endl;
+
+    // ~ operator
+    // The result is N=-(N+1) i.e, -10
+    cout<<"(b=~b) :"<<(~b)<<endl;
+
+    // << left shift operator
+    // The result is 
+    cout<<"(b<<1) :"<<(b<<1)<<endl;
+
+    // >> right shift operator
+    // The result is
+    cout<<"(b>>1) :"<<(b>>1)<<endl; 
+
+    return 0;
+}
