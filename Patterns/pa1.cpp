@@ -2,14 +2,26 @@
 using namespace std;
 
 int main(){
+   
+   int i,j,k;
+   for(int i=1;i<=5;i++){
 
-   int r =5,c=5;
+       k=i;
+       for(j=0;j<5;j++){
+           if(j==0){
+               cout<<k<<" ";
+           }
+           else if(j%2==0){
 
-   for(int i=1;i<=r;i++){
-       for(int j=i;j<=c+i-1;j++){
-           cout<<j<<" ";
+               k=k+((2*i)-1);
+               cout<<k<<" ";
+           }
+           else{
+               k=k+10-(2*i-1);
+               cout<<k<<" ";
+           }
        }cout<<endl;
    }
-
+      
    return 0;
 }
